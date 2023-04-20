@@ -1,7 +1,6 @@
 import { Schema } from "mongoose";
 
 interface IUbicacion {
-    id: number;
     calle: string;
     colonia: string;
     estado: string;
@@ -9,7 +8,6 @@ interface IUbicacion {
 }
 
 const ubicacionSchema = new Schema<IUbicacion>({
-    id: { type: Number, required: true },
     calle: { type: String, required: true },
     colonia: { type: String, required: true },
     estado: { type: String, required: true },
